@@ -1,9 +1,12 @@
 import MemberCard from "./membercard";
-import MemberData from "../../data";
 
-const MemberList = () => {
-  const memberList = MemberData.map((member) => {
-    return <MemberCard member={member} key={member.id} />;
+const MemberList = (props) => {
+  const memberList = props.memberData.map((member) => {
+    return (
+      <div className="col" key={member.id}>
+        <MemberCard member={member} />
+      </div>
+    );
   });
   return memberList;
 };
