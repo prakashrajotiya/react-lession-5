@@ -6,7 +6,7 @@ import "./app.css";
 import { useState } from "react";
 
 const Main = () => {
-  let [memberData, setmemberData] = useState(data);
+  const [memberData, setmemberData] = useState(data);
 
   return (
     <div className="main">

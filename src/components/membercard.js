@@ -1,10 +1,11 @@
 const MemberCard = (props) => {
+  const { avatar, name, designation } = props.member;
   return (
     <div className="membercard">
-      <img src={props.member.avatar} />
+      <img src={avatar} />
       <div className="membercard-info">
-        <h2>{props.member.name}</h2>
-        <p>{props.member.designation}</p>
+        <h2>{name}</h2>
+        <p>{designation}</p>
       </div>
     </div>
   );
